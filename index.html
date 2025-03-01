@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Canvas App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="tool-group">
+          <button id="pencil" class="tool active" title="Pencil">✏️</button>
+          <button id="brush" class="tool" title="Brush">🖌️</button>
+          <button id="eraser" class="tool" title="Eraser">🧽</button>
+        </div>
+        <div class="tool-group">
+          <input type="color" id="color-picker" title="Select Color" />
+          <input
+            type="color"
+            id="fill-color-picker"
+            title="Select Fill Color"
+          />
+          <input
+            type="range"
+            id="size-slider"
+            min="1"
+            max="50"
+            value="5"
+            title="Brush Size"
+          />
+        </div>
+        <div class="tool-group">
+          <button id="rectangle" class="tool" title="Rectangle">⬜</button>
+          <button id="circle" class="tool" title="Circle">🔴</button>
+          <button id="triangle" class="tool" title="Triangle">🔺</button>
+          <button id="line" class="tool" title="Line">➖</button>
+          <button id="arrow" class="tool" title="Arrow">➡️</button>
+          <button id="hexagon" class="tool" title="Hexagon">⬢</button>
+          <button id="pentagon" class="tool" title="Pentagon">⬟</button>
+        </div>
+        <div class="tool-group">
+          <button id="clear" class="tool" title="Clear Canvas">🧹</button>
+          <button id="crop" class="tool" title="Crop">✂️</button>
+          <button id="save-jpg" class="tool" title="Save as JPG">🖼️</button>
+          <button id="save-png" class="tool" title="Save as PNG">📷</button>
+          <button id="save-pdf" class="tool" title="Save as PDF">📄</button>
+        </div>
+      </div>
+
+      <!-- Canvas -->
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
